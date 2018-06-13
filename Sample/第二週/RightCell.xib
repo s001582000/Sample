@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="RightCell" customModule="Sample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="119.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4w-6E-2jz">
+                        <rect key="frame" x="138" y="49" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0SM-mU-jWC">
+                        <rect key="frame" x="200" y="-1" width="120" height="120"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="0SM-mU-jWC" secondAttribute="height" multiplier="1:1" id="agi-pA-kIR"/>
+                            <constraint firstAttribute="width" constant="120" id="qGY-r2-ZWV"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0SM-mU-jWC" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" id="7k4-kV-I9m"/>
+                    <constraint firstItem="A4w-6E-2jz" firstAttribute="centerY" secondItem="0SM-mU-jWC" secondAttribute="centerY" id="QTS-pW-KVj"/>
+                    <constraint firstItem="0SM-mU-jWC" firstAttribute="leading" secondItem="A4w-6E-2jz" secondAttribute="trailing" constant="20" id="Ts6-Iq-LmE"/>
+                    <constraint firstItem="0SM-mU-jWC" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="edJ-Ew-q8E"/>
+                    <constraint firstAttribute="trailing" secondItem="0SM-mU-jWC" secondAttribute="trailing" id="s4O-Gj-5bq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgvPhoto" destination="0SM-mU-jWC" id="leB-hB-R8f"/>
+                <outlet property="lblMessage" destination="A4w-6E-2jz" id="rJp-yh-GcT"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
